@@ -1,0 +1,11 @@
+package multiThread;
+
+public class Main {
+            public static void main(String args[]){
+            	
+            	 Thread t1 = new Thread(new Multiple("one"));
+                  
+            	 t1.start();
+            }}
+
+

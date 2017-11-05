@@ -1,0 +1,11 @@
+package abstractLab;
+
+public class AbsLab3 {
+                 public static void main(String args[])
+                 {
+                	 new AbsLab2().callMe();
+                	 new AbsLab2().legalCall();
+                	 
+                	 
+                 }
+}

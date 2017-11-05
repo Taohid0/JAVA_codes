@@ -1,0 +1,15 @@
+package genericsTest;
+
+public class Main4 {
+           public static void main(String args[]){
+        	   
+        	   Account a1 = new Account("taohidul",500.0);
+        	   Account a2 = new Account("taohidul",1500.0);
+        	   Account a3 = new Account("taohidul",2500.0);
+        	   
+        	   MyStack<Account> arrayAc = new MyStack<Account>(Account.class, 10);
+        	   
+        	   
+        	   System.out.println(arrayAc.pop());
+           }
+}

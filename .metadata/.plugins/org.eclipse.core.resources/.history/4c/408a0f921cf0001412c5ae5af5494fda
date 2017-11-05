@@ -1,0 +1,19 @@
+package multiThread;
+
+public class Main {
+            public static void main(String args[]){
+            	
+            	new Multiple("one");
+            	new Multiple("two");
+            	new Multiple("three");
+            	 
+                 try{
+                	 Thread.sleep(10000);
+                 }
+                 catch(InterruptedException e){
+                	 
+                 }
+                 System.out.println("main thread exiting");
+            }}
+
+

@@ -1,0 +1,17 @@
+package exception;
+
+public class Exc0 {
+           
+                public static void main (String args[]){
+                	int a,c;
+                	
+                	try{
+                		a = 0;
+                		c = 42/a;
+                		System.out.println("this will not be printed");
+                	}
+                	catch (ArithmeticException e){
+                		System.out.print("division by zero " + e) ;
+                	}
+                }
+}

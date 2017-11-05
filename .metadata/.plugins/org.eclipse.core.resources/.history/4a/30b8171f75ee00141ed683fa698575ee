@@ -1,0 +1,25 @@
+package multiThread;
+
+public class Main {
+            public static void main(String args[]){
+            	
+            	Thread t = Thread.currentThread();
+            	
+            	System.out.println(t);
+            	
+            	t.setName("my thread");
+            	
+            	System.out.println(t.getName());
+            	
+            	try{
+            		for(int i = 5;i>0;i--){
+            			System.out.println(i);
+            			Thread.sleep(100);
+            		}}
+            		catch(InterruptedException e){
+            			
+            		}
+            	
+            	
+            }}
+

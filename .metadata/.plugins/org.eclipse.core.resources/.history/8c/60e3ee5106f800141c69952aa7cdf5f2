@@ -1,0 +1,12 @@
+package file;
+import java.io.*;
+
+public class File4 {
+        public static void main(String args[]){
+        	
+        	try{
+        		FileOutputStream f = new FileOutputStream("G:/data/test2.txt");
+        		f.w
+        	}
+        }
+}

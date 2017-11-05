@@ -1,0 +1,8 @@
+package exception;
+
+public class Exc0 {
+            public static void main (String args[]){
+            	int a = 1,b = 0;
+            	int sum = a/b;
+            }
+}

@@ -1,0 +1,25 @@
+package multiThread;
+
+public class Multiple extends Thread  {
+                                
+                	String threadName;
+	
+	                Multiple(String threadName){
+	                	this.threadName = threadName;
+	                	Thread t = new Thread(this,threadName);
+	                	System.out.println(t);
+	                	t.start();
+	                }
+	                
+	                public void run(){
+	                	for(int i = 5;i>=0;i--){
+	                		System.out.println(threadName + " : " + i);
+	                		try {
+								Thread.sleep(1000);
+							} catch (InterruptedException e) {
+							
+							}
+	                	}
+	               
+	                System.out.println(threadName + " exiting");
+} }

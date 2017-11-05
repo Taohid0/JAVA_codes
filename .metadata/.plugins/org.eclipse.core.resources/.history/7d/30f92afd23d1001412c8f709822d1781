@@ -1,0 +1,13 @@
+package exception;
+
+public class Exc0 {
+           
+            	static void subroutine (){
+            		int a = 1,b = 0;
+            	    int sum = a/b;
+            	}
+         public static void main (String args[]){
+        	 
+        	 Exc0.subroutine();
+         }
+}

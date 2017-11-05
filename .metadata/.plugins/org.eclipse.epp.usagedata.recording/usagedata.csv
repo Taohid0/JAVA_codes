@@ -1,0 +1,11 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1423731698886
+java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1423731698886
+java.vm.specification.version,sysinfo,,,"1.8",1423731698886
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1423731698886
+java.vm.version,sysinfo,,,"25.25-b02",1423731698886
+opened,view,org.eclipse.ui.ide,3.7.0.I20110519-0100,"org.eclipse.ui.views.ProblemView",1423731701148
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1423731706195
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1423731707251
+closed,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1423731707426
+started,bundle,org.eclipse.compare,3.5.200.I20110525-0800,"org.eclipse.compare",1423731707893

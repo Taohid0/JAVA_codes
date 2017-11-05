@@ -1,0 +1,24 @@
+package multiThread;
+
+public class Join implements Runnable {
+                          String name;
+                          
+                          Join(String name){
+                        	  this.name  = name;
+                        	  Thread t = new Thread (this,name);
+                        	  t.start();
+                        
+                          }
+                          
+                          public void run(){
+                        	  for(int i = 5;i>0;i--){
+                        		  System.out.println(name +  " : " + i);
+                        		  try {
+									Thread.sleep(1000);
+								} catch (InterruptedException e) {
+									
+								}
+                        	  }
+                        	  System.out.println(name + "  " + "exiting");
+                          }
+}

@@ -1,0 +1,13 @@
+import java.applet.*;
+import java.awt.*;
+
+public class AppletExample extends Applet {
+
+    public void init() {
+        setLayout( new FlowLayout() );
+        add( new PanelJ2());
+        add( new PanelJ2());
+        add( new PanelJ2());
+    }
+
+}

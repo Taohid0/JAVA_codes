@@ -1,0 +1,7 @@
+import java.awt.event.*;
+class ExampleActionListener implements ActionListener {
+
+    public void actionPerformed( ActionEvent e) {
+        System.out.println( "Button Pressed");
+    }
+}

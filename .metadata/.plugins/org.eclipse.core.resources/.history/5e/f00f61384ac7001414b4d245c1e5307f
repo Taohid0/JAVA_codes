@@ -1,0 +1,12 @@
+package interface_programs;
+
+interface CallBack {
+	     void callBack(int n);
+}
+ 
+class Client implements CallBack{
+	      
+	public void callBack(int p){
+		System.out.println("callback called " + p);
+	}
+}

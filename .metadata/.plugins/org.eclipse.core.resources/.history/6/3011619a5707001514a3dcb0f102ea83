@@ -1,0 +1,17 @@
+package file_practice;
+import java.io.*;
+
+public class OwnFile1 {
+             public static void main(String args[]){
+            	 
+            	 BufferedReader br;
+            	 
+            	 try{
+            		 br = new BufferedReader (new InputStreamReader (new FileInputStream ("G:/data/ownfile1.txt")));
+            	 }
+            	 catch(IOException e){
+            		 System.out.println("file cannot be created");
+            	 }
+            	 
+             }
+} 

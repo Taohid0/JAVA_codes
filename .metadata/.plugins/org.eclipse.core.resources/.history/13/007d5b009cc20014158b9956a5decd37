@@ -1,0 +1,24 @@
+package thisthis;
+
+public class ThisInteresting {
+               int id;
+               String name;
+               String hometown;
+               
+               ThisInteresting(int id,String hometown){
+            	   this.id = id;
+            	   this.hometown = hometown;
+               }
+               ThisInteresting(int id,String name,String hometown){
+            	   this(id,hometown);
+            	   this.hometown = hometown;
+               }
+               void display(){
+            	   System.out.println(id+ " " + name +  " " + hometown);
+               }
+               
+               public static void main(String args[]){
+            	   ThisInteresting this1 = new ThisInteresting(140202,"taohidul Islam");
+            	   }
+			
+}

@@ -1,0 +1,21 @@
+package file;
+import java.io.*;
+
+public class File3 {
+            public static void main(String args[]){
+            	 FileOutputStream f;
+				try {
+					f = new FileOutputStream("G:/data/test.txt");
+					f.write(65);
+					f.close();
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+            	 
+            	 
+            }
+}

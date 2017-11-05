@@ -1,0 +1,29 @@
+package file_practice;
+import java.io.*;
+import java.util.*;
+
+public class Buffered2 {
+	                static Scanner s = new Scanner(System.in);
+	                
+                public static void main(String args[]){
+                	  BufferedWriter br = null;
+                		try{
+                			 br = new BufferedWriter (new OutputStreamWriter (new FileOutputStream("G:/data/buffer.txt")));
+                		   for(int i = 0;i<2;i++){
+                			String line  = s.nextLine();
+                			//if(line=="stop")break;
+                		    br.write(line);
+                		     br.write();
+                		     
+                		    
+                		}
+                		   }
+                		catch(IOException e){
+                			System.out.println("file not found");
+                		}try {
+							br.close();
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+}}

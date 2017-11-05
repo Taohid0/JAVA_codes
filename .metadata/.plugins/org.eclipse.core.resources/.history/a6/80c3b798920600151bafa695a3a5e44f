@@ -1,0 +1,10 @@
+package applet_practice;
+import java.awt.*;
+import java.applet.*;
+import java.awt.Graphics;
+
+public class SimpleApplet extends Applet {
+                           public void paint(Graphics g){
+                        	   g.drawString("this is an applet program",0,0);
+                           }
+}

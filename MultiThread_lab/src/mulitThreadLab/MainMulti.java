@@ -1,0 +1,17 @@
+package mulitThreadLab;
+
+public class MainMulti { 
+	
+	                public static int count = 1;
+	                
+                 public static void main(String args[]){
+                	 
+                	Thread t1 = new Thread(new Counter1(),"one");
+                	Thread t2 = new Thread(new Counter2(),"two");
+                	
+                	t1.start();
+                	t2.start();
+                	 
+                	 
+                 }
+}

@@ -1,0 +1,24 @@
+package genrics;
+
+public class Main {
+             public static void main(String args[]){
+            	
+            	 Account a1 = new Account("taohidul",500.0);
+            	 Account a2 = new Account ("Islam",100.0);
+            	 Account a3 = new Account ("tuhin",5000);
+            	 
+            	 MyStack<Account> accnt = new MyStack<Account>(Account.class,20);
+            	 
+            	 accnt.push(a1);;
+            	 accnt.push(a2);
+            	 accnt.push(a3);
+            	 
+            	 System.out.println(accnt.pop());
+            	 accnt.pop();
+                 accnt.pop();
+            	 accnt.pop();
+            	 
+             }
+             
+             
+}

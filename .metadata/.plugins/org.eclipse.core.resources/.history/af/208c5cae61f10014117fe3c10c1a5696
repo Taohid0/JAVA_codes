@@ -1,0 +1,16 @@
+package multiThread;
+
+public class Main2 {
+              public static void main (String args[]){
+            	  
+            	  
+            	  Join j1 =new Join("one");
+            	  Join j2 =new Join("two");
+            	  Join j3 =new Join ("three");
+            	  
+       
+            	  System.out.println(j1.t.isAlive());
+            	  System.out.println(j2.t.isAlive());
+            	  System.out.println(j3.t.isAlive());
+              }
+}

@@ -1,0 +1,31 @@
+import java.util.*;
+import java.math.*;
+
+public class Main {
+             public static void main (String args[])
+             {
+            	 Scanner sc = new Scanner(System.in);
+            	 BigInteger n,r;
+            	 
+            	 while(sc.hasNext())
+            	 {String s1;
+                      s1 = sc.next();
+            		 n  =new BigInteger(s1);
+            		 r =n.multiply(n);
+            		 
+            		 s1 = r.toString();
+            		 String s2 = n.toString();
+                     
+            		 if(s1.endsWith(s2) && n.compareTo(BigInteger.ZERO)!=0 && n.compareTo(BigInteger.ONE)!=0)
+            		 {
+            			 System.out.println("Automorphic number of "+s2.length()+"-digit.");
+            		 }
+            		 else 
+            		 {
+            			 System.out.println("Not an Automorphic number.");
+            		 }
+            	      
+            		 
+            	 }
+             }
+ }

@@ -1,0 +1,28 @@
+package generics;
+
+public class WildCardDemo {
+              public static void main(String args[]){
+            	  
+            	  Integer inums[] = {1,2,3,5,5};
+            	  
+            	  Stats2<Integer>iob = new Stats2<Integer>(inums);
+            	  
+            	  double v = iob.average();
+            	  
+            	  System.out.println("average of iob is " + iob.average());
+            	  
+            	  Double[] dnums ={1.1,2.2,2.3,1.5};
+            	  
+            	  
+            	  Stats2<Double>dob = new Stats2<Double>(dnums);
+            	  
+            	  System.out.println("average of dob is " + dob.average());
+            	  
+            	  if(iob.sameAverage(dob)){
+            		  System.out.println("same");
+            	  }
+            	  else
+            		  System.out.println("not same");
+            	  
+              }
+}

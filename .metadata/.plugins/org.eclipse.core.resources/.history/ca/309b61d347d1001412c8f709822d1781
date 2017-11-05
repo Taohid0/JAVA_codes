@@ -1,0 +1,28 @@
+package exception;
+
+public class ExceptionMain {
+   
+                	static void compute (int n) throws MyException{
+                		System.out.println("called compute " + 10);
+                		
+                		if(n>10)
+                		{
+                			throw new MyException(n);
+                		}
+                		System.out.println("normal exit");
+                	}
+                	
+                	public static void main(String args[])
+                	{
+                		try
+                		{
+                			compute(1);
+                			compute(15);
+                		}
+                		catch (MyException e)
+                		{
+                			System.out.println("caught " + e);
+                		}
+                	}
+                
+}

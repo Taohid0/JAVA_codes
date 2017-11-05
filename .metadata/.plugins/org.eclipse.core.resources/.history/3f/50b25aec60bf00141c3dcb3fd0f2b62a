@@ -1,0 +1,19 @@
+package inharitance;
+
+public class Inharitance3 extends Inharitance2 {
+	int k;
+	
+	Inharitance3(int o,int p,int q){
+		i = o;
+		j = p;
+		k = q;
+	}
+	
+	void showijk(){
+		System.out.println("here i j and k is " + i +" " + j + " " + k);
+	}
+	
+    void sum(){
+    	System.out.println("sum is"+ i+j+k);
+    }
+}

@@ -1,0 +1,14 @@
+package genericsTest;
+
+public class SameMain {
+                 public static void main(String args[]){
+                	 
+                	 Integer inums[] = {10,20,30};
+                     Double num [] = {10.0,20.0,30.0,1.0};
+               
+                 SameAvg<Integer> iob = new SameAvg<Integer>(inums);
+                 SameAvg<Double> dob = new SameAvg<Double>(num);
+                 
+                 System.out.println(iob.sameavg(dob));
+}
+  }

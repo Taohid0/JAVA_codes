@@ -1,0 +1,28 @@
+package multiThread3;
+
+public class Alivemain {
+           public static void main(String args[]){
+        	   
+        	   AliveJoin ob1 = new AliveJoin("one");
+        	   AliveJoin ob2 = new AliveJoin("two");
+        	   AliveJoin ob3 = new AliveJoin("three");
+        	   
+        	   System.out.println("threa one is alive " + ob1.t.isAlive());
+        	   System.out.println("threa two is alive " + ob2.t.isAlive());
+        	   System.out.println("threa three is alive " + ob3.t.isAlive());
+        	   
+        	   try{
+        		   System.out.println("waiting for threads to finish");
+        		   ob1.t.join();
+        		   ob2.t.join();
+        		   ob3.t.join();
+        	   }
+        	   catch(InterruptedException e){
+        		   System.out.println(e);
+        	   }
+        	   System.out.println("threa one is alive " + ob1.t.isAlive());
+        	   System.out.println("threa two is alive " + ob2.t.isAlive());
+        	   System.out.println("threa three is alive " + ob3.t.isAlive());
+        	   
+           }
+}

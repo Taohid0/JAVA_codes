@@ -1,0 +1,11 @@
+package genericsTest;
+
+public class TwoGenMain {
+             public static void main(String args[]){
+            	 
+            	 TwoGen<Integer,String> t = new TwoGen<Integer,String>(10,"ten");
+            	 
+            	 t.getob1();
+            	 t.getob2();
+             }
+}

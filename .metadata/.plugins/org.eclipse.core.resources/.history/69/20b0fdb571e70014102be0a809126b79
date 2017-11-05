@@ -1,0 +1,17 @@
+package multiThreading;
+
+public class Caller implements Runnable{
+                      String msg;
+                      CallMe target;
+                      Thread t;
+                      
+                      Caller(CallMe targ,String msg){
+                    	  this.target = targ;
+                    	  this.msg=msg;
+                    	  t = new Thread("demo");
+                    	  t.start();
+                      }
+                      public void run(){
+                    	  target.call(msg);
+                      }
+}

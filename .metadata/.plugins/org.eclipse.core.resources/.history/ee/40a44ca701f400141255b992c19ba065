@@ -1,0 +1,52 @@
+package genericsTest;
+
+import java.lang.reflect.Array;
+
+public class MyStack <T> {
+            private T arr[];
+            private int totalSize;
+            private int index;
+            private T temp;
+            
+            MyStack(Class <T> cls,int totalSize){
+            	this.totalSize = totalSize;
+            	this.arr =(T[])Array.newInstance(cls, totalSize);
+            	this.index = 0;
+            }
+            void push(T element){
+            	
+            	if(index<totalSize){
+            		arr[index++] = element;
+            	}
+            	
+            }
+            T pop(){
+            	if(index>0){
+            	temp = arr[index];
+            	arr[index] = null;
+            	return temp;
+            	
+            	}
+            	else
+            		return null;
+            }
+            		
+            int search(T element){
+            	for(int i = 0;i<index;i++){
+            		if(arr[i]==element){
+            			return i;
+            		}
+            		if(i==index){
+            			
+            		}
+            		
+            	}return -1;
+				
+            }
+            boolean isEmpty(){
+            	if(index==0)
+            		return true;
+               return false;
+            }
+            
+} 

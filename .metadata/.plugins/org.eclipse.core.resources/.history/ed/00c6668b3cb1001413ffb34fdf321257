@@ -1,0 +1,27 @@
+package account3;
+
+public class CurrentAcccount extends AccountTemplete{
+	                   public double overDraftLimit;
+	                   public double transferAmount;
+	                   
+	                   void setOverDraftLimit (double d){
+	                	   overDraftLimit = d;
+	                   }
+	                   double getOverDraftlimit(){
+	                	   return overDraftLimit;
+	                   }
+	                   
+	                   void setTransferAmount (double l){
+	                	     transferAmount = l;   
+	                   }
+	                   
+	                   double setTransferAmount (){
+	                	   return transferAmount;
+	                   }
+	                   
+	                   void transferToHossain (){
+	                	            
+	                   }
+	
+
+}

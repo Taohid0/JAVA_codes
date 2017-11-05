@@ -1,0 +1,24 @@
+package bankUpdate;
+
+public class Bankmain {
+           
+	        public static void main(String args[])
+	        {
+	        	CurrentAmount c = new CurrentAmount();
+	        	SavingsAccount s = new SavingsAccount();
+	        	
+	        c.setAccountNumber("100");
+	        c.setName("taohid");
+	        c.setAmount(10000);
+	        
+	        s.setName("babu");
+	        s.setAccountNumber("101");
+	        s.setInterestRate(4);
+	        s.setYear(5);
+	        s.setAmount(50000);	
+	        	
+	        System.out.println(c.getName()+ " " +c.getAmount());
+	        System.out.println(s.getName()+ " " + s.getAmount());
+	        	
+	        }
+}

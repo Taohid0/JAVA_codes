@@ -1,0 +1,21 @@
+package file_practice;
+import java.io.*;
+import java.util.*;
+
+public class Buffered3 {
+	          static Scanner s = new Scanner(System.in);
+	          
+            public static void main(String args[]){
+            //	int inpt = s.nextInt();
+            			
+            	BufferedReader br;
+            	try{
+            		br = new BufferedReader (new InputStreamReader (System.in));
+            	   String  inpt = br.readLine();
+            	   System.out.println(inpt);
+            	}
+            	catch(IOException e){
+            		System.out.println("file not found");
+            	}
+            }
+}

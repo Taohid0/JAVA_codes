@@ -1,0 +1,20 @@
+package multiThread;
+
+public class Main {
+            public static void main(String args[]){
+            	
+            	 new Multiple("one");
+            	 new Multiple("two");
+            	new Multiple("three");
+            	
+                 try{
+                	 Thread.sleep(1000);
+                 }
+                 catch(InterruptedException e){
+                	 
+                 }
+                 new Multiple("one").setName("asd");
+                 System.out.println(new Multiple("one").getName());
+            }}
+
+

@@ -1,0 +1,22 @@
+package file;
+import java.io.*;
+
+public class Today {
+                     public static void main(String args[]){
+                    	 
+                    	 try {
+							BufferedReader br = new BufferedReader (new InputStreamReader(new FileInputStream ("G:/data/a.txt")));
+						    int i = br.read();
+						 
+                    	 
+                    	 } catch (FileNotFoundException e) {
+							System.out.println("file not found");
+						 } 
+                    	 catch (IOException e) {
+							e.printStackTrace();
+						}
+                    	 
+                    	
+                    	 
+                     }
+}

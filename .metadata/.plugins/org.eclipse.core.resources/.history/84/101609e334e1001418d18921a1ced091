@@ -1,0 +1,12 @@
+package generics1;
+
+public class Genmain {
+        public static void main(String args[]){
+        	
+        	Gen<Integer>iob = new Gen<Integer>(10);
+        	
+        	System.out.println(iob.getOb());
+        	
+        	
+        }
+}

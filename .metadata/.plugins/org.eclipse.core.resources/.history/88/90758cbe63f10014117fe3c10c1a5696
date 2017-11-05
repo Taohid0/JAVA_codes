@@ -1,0 +1,16 @@
+package multiThread;
+
+public class Caller {
+                   String msg;
+                   Callme target;
+                   Thread t;
+                   
+                   Caller(Callme target,String msg){
+                	   this.target = target;
+                	   this.msg = msg;
+                	   t.start();
+                   }
+                   public void run(){
+                	   target.call(msg);
+                   }
+}

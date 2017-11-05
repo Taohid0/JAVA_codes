@@ -1,0 +1,11 @@
+package applet_practice;
+import java.awt.*;
+import java.applet.*;
+
+//<applet code = "AppletForst" width = 20 height = 60>
+//</applet>
+public class AppletFirst  extends Applet{
+              public void paint(Graphics g){
+            	  g.drawString("a simple applet",20,20);
+              }
+}

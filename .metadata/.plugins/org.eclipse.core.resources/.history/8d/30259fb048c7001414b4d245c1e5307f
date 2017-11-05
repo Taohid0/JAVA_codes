@@ -1,0 +1,9 @@
+package interface_programs;
+
+public class InterfaceMain {
+         public static void main (String args[]){
+        	 CallBack c = new Client();
+        	 
+        	 c.callBack(10);
+         }
+}

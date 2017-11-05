@@ -1,0 +1,23 @@
+package multiThreading;
+
+public class main {
+            public main(String args[]){
+            	
+            	NewThread0 n1 = new NewThread0("one");
+            	NewThread0 n2   = new NewThread0("two");
+            	
+            	try{
+            		Thread.sleep(1000);
+            		n1.mySuspend();
+            		
+            		System.out.println("suspending thrad one");
+            		n1.myResume();
+            		
+            		
+            	
+            	
+            	
+            }catch(InterruptedException e){
+            }
+            }
+}

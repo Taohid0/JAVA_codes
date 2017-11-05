@@ -1,0 +1,21 @@
+package account3;
+
+public class SavingAccount extends AccountTemplete {
+                 private double interestRate;
+                 
+	void getInterestRate (double rate){
+		interestRate = rate;
+	}
+	
+	double setInterestRate (double r){
+		return interestRate;
+	}
+	
+	void applyInterst(){
+		double a = getBalance();
+		
+		a= a + (a*(interestRate/4));
+		
+		setBalance(a);
+	}
+}

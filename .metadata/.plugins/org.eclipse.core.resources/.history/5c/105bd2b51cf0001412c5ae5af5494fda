@@ -1,0 +1,19 @@
+package multiThread;
+
+public class Main {
+            public static void main(String args[]){
+            	
+            	Thread t1 = new Multiple("one");
+            	Thread t2 = new Multiple("two");
+            	Thread t3 = new Multiple("three");
+            	 
+                 try{
+                	 Thread.sleep(10000);
+                 }
+                 catch(InterruptedException e){
+                	 
+                 }
+                 System.out.println(t1.getName());
+            }}
+
+

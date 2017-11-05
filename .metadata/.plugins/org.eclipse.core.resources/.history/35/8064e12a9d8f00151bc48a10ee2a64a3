@@ -1,0 +1,28 @@
+package sayed;
+import java.io.*;
+
+import javax.imageio.IIOException;
+
+public class Sayed {
+               
+	
+       public static void main (String [] args)
+       {
+    	   System.out.println("ok");
+       
+
+      try{
+    	
+    	  FileOutputStream out = new FileOutputStream ("E:/infile.txt");
+    	  
+    	  out.write(50);
+    	  
+      }
+      catch (IOException e)
+      {
+    	  
+      }
+
+
+}
+}

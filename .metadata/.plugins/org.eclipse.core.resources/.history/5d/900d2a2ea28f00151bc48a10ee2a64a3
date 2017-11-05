@@ -1,0 +1,88 @@
+package sayed;
+import java.io.*;
+import java.util.*;
+
+
+public class Sayed {
+               static int[] arr   = new int[100];
+	  
+	    
+	   
+       public static void main (String [] args)
+       {
+    	   
+           Random r = new Random();
+
+      try{
+    	
+    	 Writer out = new FileWriter("E:/infile.txt");
+    	  
+    	  
+    	 for(int i =0;i<20;i++)
+    	 {
+    		 int x = -1;
+    		x = r.nextInt(100);
+    		 
+    		out.write(String.valueOf(x)+ " ");
+             
+    		
+    	 }
+    	 out.close();
+    	  
+      }
+      catch (IOException e)
+      {
+    	  System.out.println("here is an exception in openning first file");
+      }
+      try
+      {
+    	  Reader in = new FileReader("E:/infile.txt");
+    	  
+    	  int s = -1;
+    	  
+    	  for(int i = 0;i<20;i++)
+    	  {
+    		  s = in.read();
+    		  arr[i] = s;
+    		  
+    	  }
+    	  
+      }
+      
+      catch (IOException e)
+      {
+    	  
+      }
+      
+      for(int i =0;i<20;i++)
+      {
+    	  for(int j = i+1;j<20;j++)
+    	  {
+    		  if(arr[i]>arr[j])
+    		  {
+    			  int temp = arr[i];
+    			  arr[i] = arr[j];
+    			  arr[j] = temp;
+    		  }
+    	  }
+      }
+      
+      try
+      {
+    	  Writer result = new FileWriter("E:/result.txt");
+    	  
+    	  for(int i =0;i<20;i++)
+     	 {
+     		
+    		  result.write(String.valueOf(arr[i]) +  " ");
+              
+     		
+     	 }
+      	result.close();
+      }
+      catch(IOException e)
+      {
+    	System.out.println("here is an exception in result file");  
+      }
+}
+}
